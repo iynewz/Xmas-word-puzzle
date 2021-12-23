@@ -1,235 +1,185 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
     <script>
-        window.onload = function() {
-            for(let node of document.querySelectorAll("td")) {
-                node.onclick = function() {
-                    if (node.className == "") {
-                        node.className = "selected";
-                    } else {
-                        node.className = "";
-                    }
-                }
+      window.onload = function () {
+        for (let node of document.querySelectorAll("td")) {
+          node.onclick = function () {
+            if (node.className == "") {
+              node.className = "selected";
+            } else {
+              node.className = "";
             }
+          };
         }
+      };
     </script>
-    <style>
-        h1 {
-            text-align: center;
-            color: white;
-        }
-        ul {
-            color:white;
-            margin-top: 20px;
-            margin-left: auto;
-        }
-
-        td {
-            cursor: pointer;
-            border: 1px solid rgb(202, 199, 199);
-            width: 6vw;
-            height: 6vw;
-            text-align: center;
-            font-size: x-large;
-            font-weight: 700;
-            color: rgb(240, 94, 75);
-        }
-        tg {
-            color: rgb(4, 244, 175);
-        }
-
-        td.selected {
-            background-color:rgba(248, 151, 240, 0.315);
-        }
-
-        table {
-            background-color: black;         
-        }
-        body {
-            background-color: black;
-        }
-        .center {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-    </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Milvus Word Puzzle</h1>
-    
+
     <table class="center">
-        <tr>
-            <td>R</td>
-            <td>A</td>
-            <td>E</td>
-            <td>Y</td>
-            <td>Y</td>
-            <td><tg>P</tg></td>
-            <td>X</td>
-            <td>S</td>
-            <td>K</td>
-            <td>C</td>
-            <td>F</td>
-        </tr>
-        <tr>
-            <td>U</td>
-            <td>B</td>
-            <td>A</td>
-            <td>R</td>
-            <td><tg>V</tg></td>
-            <td><tg>O</tg></td>
-            <td><tg>X</tg></td>
-            <td>J</td>
-            <td>Z</td>
-            <td>F</td>
-            <td>J</td>
-        </tr>
-        <tr>
-            <td>I</td>
-            <td>T</td>
-            <td>R</td>
-            <td><tg>A</tg></td>
-            <td><tg>W</tg></td>
-            <td><tg>X</tg></td>
-            <td><tg>K</tg></td>
-            <td><tg>Y</tg></td>
-            <td>I</td>
-            <td>H</td>
-            <td>V</td>
-        </tr>
-        <tr>
-            <td>A</td>
-            <td>E</td>
-            <td><tg>C</tg></td>
-            <td><tg>H</tg></td>
-            <td><tg>R</tg></td>
-            <td><tg>I</tg></td>
-            <td><tg>S</tg></td>
-            <td><tg>T</tg></td>
-            <td><tg>M</tg></td>
-            <td>A</td>
-            <td>S</td>
-        </tr>
-        <tr>
-            <td>M</td>
-            <td>N</td>
-            <td>U</td>
-            <td><tg>Y</tg></td>
-            <td><tg>R</tg></td>
-            <td><tg>T</tg></td>
-            <td><tg>Z</tg></td>
-            <td><tg>A</tg></td>
-            <td>T</td>
-            <td>P</td>
-            <td>M</td>
-        </tr>
-        <tr>
-            <td>Q</td>
-            <td>S</td>
-            <td><tg>D</tg></td>
-            <td><tg>N</tg></td>
-            <td><tg>O</tg></td>
-            <td><tg>A</tg></td>
-            <td><tg>L</tg></td>
-            <td><tg>L</tg></td>
-            <td><tg>J</tg></td>
-            <td>P</td>
-            <td>G</td>
-        </tr>
-        <tr>
-            <td>E</td>
-            <td><tg>W</tg></td>
-            <td><tg>E</tg></td>
-            <td><tg>A</tg></td>
-            <td><tg>N</tg></td>
-            <td><tg>N</tg></td>
-            <td><tg>S</tg></td>
-            <td><tg>F</tg></td>
-            <td><tg>E</tg></td>
-            <td><tg>Y</tg></td>
-            <td>G</td>
-        </tr>
-        <tr>
-            <td>K</td>
-            <td>W</td>
-            <td>R</td>
-            <td><tg>U</tg></td>
-            <td><tg>B</tg></td>
-            <td><tg>M</tg></td>
-            <td><tg>N</tg></td>
-            <td><tg>L</tg></td>
-            <td>R</td>
-            <td>Q</td>
-            <td>B</td>
-        </tr>
-        <tr>
-            <td>L</td>
-            <td>X</td>
-            <td><tg>K</tg></td>
-            <td><tg>L</tg></td>
-            <td><tg>O</tg></td>
-            <td><tg>G</tg></td>
-            <td><tg>Y</tg></td>
-            <td><tg>A</tg></td>
-            <td><tg>U</tg></td>
-            <td>I</td>
-            <td>P</td>
-        </tr>
-        <tr>
-            <td>K</td>
-            <td><tg>N</tg></td>
-            <td><tg>O</tg></td>
-            <td><tg>W</tg></td>
-            <td><tg>H</tg></td>
-            <td><tg>E</tg></td>
-            <td><tg>R</tg></td>
-            <td><tg>E</tg></td>
-            <td><tg>N</tg></td>
-            <td><tg>P</tg></td>
-            <td>V</td>
-        </tr>
-        <tr>
-            <td><tg>N</tg></td>
-            <td><tg>O</tg></td>
-            <td><tg>I</tg></td>
-            <td><tg>T</tg></td>
-            <td><tg>C</tg></td>
-            <td><tg>E</tg></td>
-            <td><tg>L</tg></td>
-            <td><tg>L</tg></td>
-            <td><tg>O</tg></td>
-            <td><tg>C</tg></td>
-            <td><tg>O</tg></td>
-        </tr>
-        
+      <tr>
+        <td>R</td>
+        <td>A</td>
+        <td>E</td>
+        <td>Y</td>
+        <td>Y</td>
+        <td><tg>P</tg></td>
+        <td>X</td>
+        <td>S</td>
+        <td>K</td>
+        <td>C</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>U</td>
+        <td>B</td>
+        <td>A</td>
+        <td>R</td>
+        <td><tg>V</tg></td>
+        <td><tg>O</tg></td>
+        <td><tg>X</tg></td>
+        <td>J</td>
+        <td>Z</td>
+        <td>F</td>
+        <td>J</td>
+      </tr>
+      <tr>
+        <td>I</td>
+        <td>T</td>
+        <td>R</td>
+        <td><tg>A</tg></td>
+        <td><tg>W</tg></td>
+        <td><tg>X</tg></td>
+        <td><tg>K</tg></td>
+        <td><tg>Y</tg></td>
+        <td>I</td>
+        <td>H</td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td>E</td>
+        <td><tg>C</tg></td>
+        <td><tg>H</tg></td>
+        <td><tg>R</tg></td>
+        <td><tg>I</tg></td>
+        <td><tg>S</tg></td>
+        <td><tg>T</tg></td>
+        <td><tg>M</tg></td>
+        <td>A</td>
+        <td>S</td>
+      </tr>
+      <tr>
+        <td>M</td>
+        <td>N</td>
+        <td>U</td>
+        <td><tg>Y</tg></td>
+        <td><tg>R</tg></td>
+        <td><tg>T</tg></td>
+        <td><tg>Z</tg></td>
+        <td><tg>A</tg></td>
+        <td>T</td>
+        <td>P</td>
+        <td>M</td>
+      </tr>
+      <tr>
+        <td>Q</td>
+        <td>S</td>
+        <td><tg>D</tg></td>
+        <td><tg>N</tg></td>
+        <td><tg>O</tg></td>
+        <td><tg>A</tg></td>
+        <td><tg>L</tg></td>
+        <td><tg>L</tg></td>
+        <td><tg>J</tg></td>
+        <td>P</td>
+        <td>G</td>
+      </tr>
+      <tr>
+        <td>E</td>
+        <td><tg>W</tg></td>
+        <td><tg>E</tg></td>
+        <td><tg>A</tg></td>
+        <td><tg>N</tg></td>
+        <td><tg>N</tg></td>
+        <td><tg>S</tg></td>
+        <td><tg>F</tg></td>
+        <td><tg>E</tg></td>
+        <td><tg>Y</tg></td>
+        <td>G</td>
+      </tr>
+      <tr>
+        <td>K</td>
+        <td>W</td>
+        <td>R</td>
+        <td><tg>U</tg></td>
+        <td><tg>B</tg></td>
+        <td><tg>M</tg></td>
+        <td><tg>N</tg></td>
+        <td><tg>L</tg></td>
+        <td>R</td>
+        <td>Q</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>L</td>
+        <td>X</td>
+        <td><tg>K</tg></td>
+        <td><tg>L</tg></td>
+        <td><tg>O</tg></td>
+        <td><tg>G</tg></td>
+        <td><tg>Y</tg></td>
+        <td><tg>A</tg></td>
+        <td><tg>U</tg></td>
+        <td>I</td>
+        <td>P</td>
+      </tr>
+      <tr>
+        <td>K</td>
+        <td><tg>N</tg></td>
+        <td><tg>O</tg></td>
+        <td><tg>W</tg></td>
+        <td><tg>H</tg></td>
+        <td><tg>E</tg></td>
+        <td><tg>R</tg></td>
+        <td><tg>E</tg></td>
+        <td><tg>N</tg></td>
+        <td><tg>P</tg></td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td><tg>N</tg></td>
+        <td><tg>O</tg></td>
+        <td><tg>I</tg></td>
+        <td><tg>T</tg></td>
+        <td><tg>C</tg></td>
+        <td><tg>E</tg></td>
+        <td><tg>L</tg></td>
+        <td><tg>L</tg></td>
+        <td><tg>O</tg></td>
+        <td><tg>C</tg></td>
+        <td><tg>O</tg></td>
+      </tr>
     </table>
 
     <ul>
-        <div>
-            <li>
-                圣诞快乐，新年大吉！（6 个单词）
-            </li>
-            <li>
-                圣诞快乐，新年大吉！（6 个单词）
-            </li>
-            <li>
-                圣诞快乐，新年大吉！（6 个单词）
-            </li>
-            <li>
-                圣诞快乐，新年大吉！（6 个单词）
-            </li>
-            <li>
-                圣诞快乐，新年大吉！（6 个单词）
-            </li>
-            <li>
-                圣诞快乐，新年大吉！（6 个单词）
-            </li>
-        </div>
-        
+      <div>💡 提示：</div>
+      <div>1. 圣诞快乐，新年大吉！（6 个单词）</div>
+      <div>2. Milvus 数据库支持多种索引，包括树结构索引方法 ___ 。（1 个单词）</div>
+      <div>3. 对于需要 100% 召回率且数据规模相对较小的向量相似性搜索应用， ___ 是一个很好的选择。（1 个单词））</div>
+      <div>4.  ___ 是 Milvus 数据库的核心检索引擎模块。（1 个单词）</div>
+      <div>5.  ___ 包含一组 entity，可以等价于关系型数据库系统（RDBMS）中的表（table）。（1 个单词）</div>
+      <div>6. Milvus 数据库的消息存储目前基于 ___ 实现，它是系统的日志流底层引擎，支撑日志流的可靠存储与发布和订阅。（1 个单词）</div>
     </ul>
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  padding: 10px;
+}
+ul {
+  color: white;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+td {
+  cursor: pointer;
+  border: 1px solid rgb(202, 199, 199);
+  width: calc(min(8vw, 8vh));
+  height: calc(min(8vw, 8vh));
+  text-align: center;
+  font-size: x-large;
+  color: rgb(240, 94, 75);
+}
+tg {
+  color: rgb(14, 163, 76);
+}
+
+td.selected {
+  background-color: rgb(247, 248, 163);
+}
+
+table {
+  font-family: 'Press Start 2P', cursive;
+  background-color: black;
+}
+body {
+  background-color: black;
+  
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
