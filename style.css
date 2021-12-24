@@ -12,7 +12,7 @@ ul {
 
 td {
   cursor: pointer;
-  border: 1px solid rgb(202, 199, 199);
+  border: 1px solid rgba(202, 199, 199, 0.507);
   width: calc(min(8vw, 8vh));
   height: calc(min(8vw, 8vh));
   text-align: center;
@@ -52,7 +52,41 @@ li {
 }
 
 #morehelp {
-  color: bisque;
-  font-size: 12px;
-  text-align: center;
-}
+  color:rgb(255, 255, 255);
+  font-family:FiraSans-Regular, sans-serif;
+  font-size:14px;
+  margin:0;
+  }
+
+.footer{
+  background-color:#1718187a;
+  margin-top:50px;
+  padding:0;
+  height:10vh;
+  float:right;
+
+  }
+
+.footerP{
+  color:rgb(255, 255, 255);
+  font-family:FiraSans-Regular, sans-serif;
+  font-size:14px;
+  margin:0;
+  
+  float:right;
+  }
+
+.wechatImage {
+  float:right;
+  }
+    
+.wechat{
+  width:calc(min(8vw, 8vh));
+  height:calc(min(8vw, 8vh));
+  float:right;
+  margin-left: 10px;
+  }
+
+  a {
+    color: rgb(14, 163, 76);
+  }
